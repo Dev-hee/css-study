@@ -46,14 +46,14 @@ h1 {}
 main {} 
 main aside {}
 main aside h2 {}
-main aside h2 ul {}
-main aside h2 ul li a{}
-main aside h2 ul li .last {}
+main aside ul {}
+main aside ul li a{}
+main aside ul li .last {}
 main aside h2 ul li .last a {}
 section {}
 section .top{}
 section .top h1 {}
-section .top h1 p {}
+section .top p {}
 section .article {}
 section .article p {}
 
@@ -61,12 +61,12 @@ section .article p {}
 hr{}
 #t {}
 #t thead {}
-#t thead > tr {}
-#t thead > tr th {}
+#t thead tr {}
+#t thead tr th {}
 #t tbody {}
-#t tbody > tr {}
-#t tbody > tr td {}
-#t tbody > tr td span {}
+#t tbody tr {}
+#t tbody tr td {}
+#t tbody tr td span {}
 #t tfoot {}
 #t tfoot tr {}
 #t tfoot tr th {}
