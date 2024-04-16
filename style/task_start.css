@@ -1,13 +1,13 @@
 /**ver0**/
 h1 {}
 .test_box{}
-.test_box h1{}
+.test_box > h1{}
 .test_box h2{}
 .test_box h3{}
 .test_box h4{}
 .test_box h1 #title1{}
 .test_box h2 #title2{}
-.test_box p {}
+.test_box > p {}
 .test_box blockquote cite{}
 .test_box p span{}
 .test_box p q{}
@@ -24,6 +24,7 @@ h1 {}
 hr {}
 h1 {}
 header {}
+header > h1{}
 header form {}
 header form input {}
 header form > a {}
