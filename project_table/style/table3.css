@@ -1,0 +1,68 @@
+main {
+    font-family:"Noto Sans KR", sans-serif;
+    padding: 50px;
+    display: inline-block;
+    text-align:center;
+}
+main h1{
+    letter-spacing:-0.4px;
+    font-size:3.125rem;
+    margin-bottom:23px;
+    font-weight:700;
+}
+main h1 em{
+    font-size:3.125rem;
+    color: red;
+    font-weight:700;
+}
+main p{
+    font-size:1.25rem;
+    letter-spacing:-0.4px;
+    margin-bottom:65px;
+}
+main table {
+    width: 760px;
+    font-size:1rem;
+    border:3px solid #000;
+    border-left:0; border-right: 0;
+    margin-bottom:41px;
+}
+main table thead{
+    text-align:center;
+    background-color:#F3F3F3;
+    border:1px solid #000; 
+    border-left:0; border-right: 0;
+}
+main table thead tr{
+}
+main table thead tr th{
+    text-align:center;
+    padding: 20px 0 20px 14px;
+    border:1px solid #000; 
+    border-left:0; border-right: 0;
+}
+main table tbody {
+}
+main table tbody tr{
+    border :1px solid #000;
+}
+main table tbody tr td {
+    padding: 20px 0 20px 14px;
+    border:1px solid #000;
+}
+main table thead tr:nth-child(1) th 
+{
+    border-left:0;
+    border-right:0;
+}
+main table tbody tr:nth-child(1)td
+{
+    border-right:0;
+}
+main table tbody tr td a{
+
+}
+
+
+
+
