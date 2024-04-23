@@ -1,0 +1,42 @@
+main {
+    font-family:'Noto Sans KR', sans-serif;
+    font-size:2.5rem;
+    padding:50px;
+    letter-spacing:-0.2px;
+    display: inline-block;
+    text-align: center;
+}
+main .title {}
+main .title span{}
+main .title p{
+}
+main h1{
+    text-align: center;
+    font-size:2.5rem;
+    letter-spacing:-0.4px;
+    margin:0 0 36px;
+    letter-spacing:-0.4px;
+    line-height:1.2;
+    background-color: aqua;
+
+}
+main h1 span {
+    font-size:2.5rem;
+    width: 948px;
+    background-color: blue;
+}
+main p {
+}
+main table {
+    font-size:1.125rem;
+    display:inline-block;
+    text-align:center;
+    border: 1px solid red;
+}
+main table thead {text-align: center;}
+main table tr {border: 1px solid red;}
+main table thead tr th
+{border-bottom: 2px solid #000000;
+text-align: center;}
+main table tr {}
+main table tr td{border: 1px solid red;}
