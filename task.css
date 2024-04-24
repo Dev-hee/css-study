@@ -1,0 +1,56 @@
+main {
+    font-family:'Noto Sans KR', sans-serif;
+    font-size:2.5rem;
+    padding:50px;
+    letter-spacing:-0.2px;
+    display: inline-block;
+    text-align: center;
+}
+main .title {
+    text-align: center;
+    font-size:2.5rem;
+    letter-spacing:-0.4px;
+    margin:0 0 36px;
+    letter-spacing:-0.4px;
+    line-height:1.2;
+
+}
+main .title span{
+    font-weight:700;
+}
+main p{
+    font-size:1rem;
+    text-align:right;
+    letter-spacing:-0.2px;
+    margin-bottom:8px;
+}
+main h1 span {
+    font-size:2.5rem;
+    width: 948px;
+    background-color: blue;
+}
+main p {
+}
+main table {
+    width:945px;
+    background-color: aqua;
+    font-size:1.125rem;
+    display:inline-block;
+    text-align:center;
+    border: 1px solid #787878;
+    line-height:70px;
+}
+main table thead {text-align: center;}
+main table tr {}
+main table thead tr th
+{border: 2px solid #000000;
+text-align: center;
+line-height:70px;}
+main table tr {}
+main table tr td{
+    border: 1px solid #787878;
+}
+main table tr:nth-child(1) td:nth-child(1) {width:240px;}
+main table tr:nth-child(1) td:nth-child(2) {width:240px;}
+main table tr:nth-child(1) td:nth-child(3) {width:240px;}
+main table tr:nth-child(1) td:nth-child(4) {width:240px;}
