@@ -1,104 +1,43 @@
-main {
-    font-family:"Noto Sans KR", sans-serif;
-    text-align: center;
-}
-main h1 {    
-    font-size:3.125rem;
-    font-weight: 700;
-    padding-bottom: 14px;
-}
-main > p{
-    font-weight: 300; /*400이 기본*/
-    padding-bottom: 40px;
-}
-main > p, 
-main.contents_bg > p,
-main.contents_bg .vision h2
-{
-    letter-spacing: -0.2px;
-}
-main .contents_bg {
-    background-color:#f5f5f5;
-    padding-top: 40px;
-}
-main .contents_bg > p {
-    line-height:30px;
-    padding-bottom: 30px;
-}
-main .contents_bg .vision {}
-main .contents_bg .vision h2, main .contents_bg .goal h2, main .strategy h2
-{
-    padding-top: 80px;
-    padding-bottom: 30px;
-    color: #36B4E5;
-    font-size: 1.875rem;
-}
-main .contents_bg .vision p {
-    line-height:45px;
-    font-size:2.188rem;   
-}
-/* goal */
+/* css디자인 */
+/* #top {background-color: aqua;}
+#top main {div#top-color: yellow;}
+#top main h1 {div#top-color: lime;}
+#top main p {} */
 
-main .contents_bg .goal {
-}
-main .contents_bg .goal h2{
-}
-main .contents_bg .goal .goal_contents {
-}
-main .contents_bg .goal .goal_contents li {
-    width:250px; height:250px;
-    border-radius:50%;
-    padding-top:67px;
-    display: inline-block;
-    text-align: center;
-    /* figma drop-shadow ==css box-shadow */
-    /* box-shadow : x축 y축 blur 값 색상; */
-    box-shadow:0px 0px 6px rgba(0,0,0,0.25)
-    /* text-align:center; */
-}
-main .contents_bg .goal .goal_contents .first{
-    background-color: #36B4E5;
-}
-main .contents_bg .goal .goal_contents .second{
-    background-color: #ffffff;
-}
-main .contents_bg .goal .goal_contents .last{
-    background-color:yellow
-}
-main .contents_bg .goal .goal_contents li .icon{
-    padding-bottom:20px;
-}
-main .contents_bg .goal .goal_contents li .icon img{
-    width:60px; height:60px;
-}
-.contents_bg .goal .goal_contents li h3{
-    color:#ffffff;
-    letter-spacing: -0.2px;
-    font-size: 1.563rem
-}
-main .contents_bg .goal .goal_contents .second h3{
-    color:black;
-}
-main .contents_bg .strategy{}
-main .contents_bg .strategy h2{
-}
-main .contents_bg .strategy .strategy_contents{
-}
-main .contents_bg .strategy .strategy_contents li{
-    display:inline-block;
-    background-color:#eeeeee;
-    width: 200px; height: 200px;
-    border-radius:50%;
-    padding-top:60px;
-    box-shadow:0px 0px 6px rgba(0,0,0,0.25)
-}
-main .contents_bg .strategy .strategy_contents li h3{
-    font-size:1.125rem;
-    padding-bottom:7px;
-}
-main .contents_bg .strategy .strategy_contents li p{
-    letter-spacing:-0.2px;
-    padding-top:7px;
-    padding-bottom:58px;
-    line-height:23px;
-}
+/* 선택자연습1 */
+.title {}
+.title h1 {}
+.title .txt_wrap {}
+.title .txt_wrap .txt_1 {}
+.title .txt_wrap .txt_1 .sub_title {}
+.title .txt_wrap .txt_1 .name {}
+
+/* 선택자연습2 */
+#weather {}
+#weather h1 {}
+#weather .area {}
+#weather .temperature {}
+#weather p{}
+#weather .sub_title {}
+#weather .humidity {}
+#weather .dust {}
+#weather .result {}
+
+/* 선택자연습3 */
+#news {background-color: aqua;}
+#news > a{color:blue;}
+#news .box {background-color: coral;}
+#news .box a {color:brown;}
+#news .box a h2 {color:red;}
+#news .box a p {color: chartreuse;}
+#news >p {color: rgb(57, 30, 131);}
+
+/* 선택자연습4 */
+#papago {background-color: aquamarine;}
+#papago nav {color: burlywood;}
+#papago nav a {color: cadetblue;}
+#papago main {color: rgb(200, 255, 0);}
+#papago main h1 {color:rgba(18, 42, 148, 0.466);}
+#papago main h1 a {color:red;}
+#papago main > a {color: chartreuse;}
+#papago > a {color: rgb(87, 14, 75);}
