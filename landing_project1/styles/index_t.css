@@ -1,0 +1,81 @@
+main{} /* 배경 공통&개별값*/
+main .bg{
+    background-position:center;
+    background-repeat:no-repeat;
+}
+main .bg1{
+    background-image:url(../images/bg.jpg);
+    height:1002px;
+}
+/*----------------------------------------1.표지 */
+main .bg1 section {
+    width:1250px;
+    margin:0 auto;
+}
+main .bg1 section h1{}
+main .bg1 section h1 a{}
+main .bg1 section h1 a img{}
+main .bg1 section h2{
+    text-align:center;
+    font-size: 4.375rem; color:#fff;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    margin: 143px 0 42px;
+}
+main .bg1 section h2 em{
+    font-weight: 700;
+    margin-bottom: 52px;
+}
+    /* 가상선택자 (이미지 ::after(뒤)에 넣어주기) */
+    main .bg1 section .sponsor_link::after {
+        content:'';
+        background-image:url(../images/btn_right_arrow.svg);
+        background-repeat: no-repeat;
+        width:32px; height: 32px;
+        display:inline-block;
+    }
+/* 북극곰 후원하기 */
+main .bg1 section .sponsor_link{
+    background:linear-gradient(90deg,#FE9300, #FF7300);
+    display: block; margin: 0 auto;  /*block을 가운데로 보낼때 -->*/
+    width:409px; line-height:71px;
+    text-align:center;
+    border-radius:50px;
+    font-size:2.125rem ;
+    font-weight:700;
+    color: #fff;
+}
+/* 후원관련 자주 묻는 질문 보기 */
+main .bg1 section .sponsor_question::before,
+main .bg1 section .sponsor_question::after
+{
+    content:'';
+    background-repeat: no-repeat;
+    background-size:24px;
+    display: inline-block;
+    width: 24px; height: 24px;
+}
+main .bg1 section .sponsor_question::before {
+    content:'';
+    background-image:url(../images/icon_sns.svg);
+}
+main .bg1 section .sponsor_question::after{
+    content:'';
+    background-image:url(../images/btn_right_arrow.svg);
+}
+main .bg1 section .sponsor_question{
+    background-color:#050505;
+    color: #fff;
+    float: right;
+    width:439px;
+    line-height:51px;
+    border-radius:50px;
+    text-align:center;
+    font-size: 1.625rem;
+    margin: 189px 0 0;
+    display: flex; justify-content: center; align-items: center;
+}
+/*----------------------------------- 2-퀴즈 */
+
+
+

@@ -1,0 +1,155 @@
+main{} /* 배경 공통&개별값*/
+main .bg{
+    background-position:center;
+    background-repeat:no-repeat;
+}
+main .bg1{
+    background-image:url(../images/bg.jpg);
+    height:1002px;
+}
+/*----------------------1.표지 */
+main .bg1 section {
+    width: 1250px;
+    margin: 0 auto;
+}
+main .bg1 section h1{}
+main .bg1 section h1 a{}
+main .bg1 section h1 a img{}
+main .bg1 section h2{
+    text-align:center;
+    font-size: 4.375rem; color:#fff;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    margin: 143px 0 42px;
+}
+main .bg1 section h2 em{
+    font-weight: 700;
+    margin-bottom: 52px;
+}
+
+    /* 가상선택자 (이미지 ::after(뒤)에 넣어주기) */
+    main .bg1 section .sponsor_link::after {
+        content:'';
+        background-image:url(../images/btn_right_arrow.svg);
+        background-repeat: no-repeat;
+        width:32px; height: 32px;
+        display:inline-block;
+    }
+
+/* 북극곰 후원하기 */
+main .bg1 section .sponsor_link{
+    background:linear-gradient(90deg,#FE9300, #FF7300);
+    display: block; margin: 0 auto;  /*block을 가운데로 보낼때 -->*/
+    width:409px; line-height:71px;
+    text-align:center;
+    border-radius:50px;
+    font-size:2.125rem ;
+    font-weight:700;
+    color: #fff;
+}
+/* 후원관련 자주 묻는 질문 보기 */
+
+main .bg1 section .sponsor_question::before,
+main .bg1 section .sponsor_question::after
+{
+    content:'';
+    background-repeat: no-repeat;
+    background-size:24px;
+    display: inline-block;
+    width: 24px; height: 24px;
+
+}
+
+main .bg1 section .sponsor_question::before {
+    content:'';
+    background-image:url(../images/icon_sns.svg);
+}
+main .bg1 section .sponsor_question::after{
+    content:'';
+    background-image:url(../images/btn_right_arrow.svg);
+}
+
+main .bg1 section .sponsor_question{
+    background-color:#050505;
+    color: #fff;
+    float: right;
+    width:439px;
+    line-height:51px;
+    border-radius:50px;
+    text-align:center;
+    font-size: 1.625rem;
+    margin: 189px 0 0;
+    display: flex; justify-content: center; align-items: center;
+}
+/*----------------------------------- 2-퀴즈 */
+
+main .bg2{
+    width:1250px;
+    background-color:aqua;
+    flex-wrap:wrap;
+}
+
+main .bg2 #quiz_frm{background-color:yellow;}
+
+main .bg2 #quiz_frm .quiz_contents h2{
+    width: 450px;
+    background-color:rgb(42, 124, 31);
+    font-size:3.438rem;
+    margin-bottom:60px;
+}
+
+main .bg2 #quiz_frm p{
+    width:450px;
+    background-color:rgb(27, 235, 8);
+    font-size:1.25rem;
+}
+main .bg2 #quiz_frm input[id^=pquiz_q]
+{
+    width:100%; line-height:20px;
+    background-color:rgb(168, 216, 92);
+    margin-bottom:6px;
+    font-size:1.25rem;
+    color: #fff;
+    display: block;
+    text-align: left;
+}
+main .bg2 .quiz_participation{
+    flex-wrap:wrap;
+    width: 450px;
+    background-color:rgb(124, 46, 83);
+    font-size:1.625rem;
+    display:flex; justify-content:right; align-items:right;
+}
+main .bg2 .quiz_participation .status h2{
+    width: 450px;
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:1.625rem;
+    display:flex; justify-content:center; align-items:center;
+}
+
+main .bg2 .quiz_participation .status .contents{
+    width: 450px;
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:1.625rem;
+    display:flex; justify-content:center; align-items:center;}
+
+main .bg2 .quiz_participation .status .contents em{
+    width: 450px;
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:1.25rem;
+    display:flex; justify-content:center; align-items:center;
+}
+
+main .bg2 .quiz_participation .status .contents span{
+    width: 450px;
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:1.25rem;
+    display:flex; justify-content:center; align-items:center;
+}
+
+main .bg2 .quiz_participation .status .contents strong{
+    width: 450px;
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:1.25rem;
+    display:flex; justify-content:center; align-items:center;
+}
