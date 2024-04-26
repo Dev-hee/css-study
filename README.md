@@ -57,3 +57,110 @@
 * #Hex #000000 == #000, #FF00CC => F0C
 * rgba(red,green,blue,alpha) *최대색상 255
 * alpha는 투명도를 줄 수 있다. ex) 1 (최대밝기)
+## box css
+### display
+* `block, inline, inline-block`
+* 특정 태그가 화면에 어떻게 표시될지 지정하는 속성
+* `block` : 새로운 행, 크기, 여백 인식 / 너비100%와는 별도로 항상 줄바꿈이 이루어짐.
+* `inline` : 내용만큼 크기 인식(그 외 크기인식 불가능)
+* `inline-block` : 내용만큼 크기 인식(크기 추가설정가능), 옆으로 정렬
+### box-sizing
+* `box-sizing:border-box`
+* 요소의 너비와 높이를 계산할 때 테두리, 여백(padding)까지 포함해서 계산하는 속성
+* 속성 미적용 시 : w100+h100+padding-top20 = 100x120
+* 속성 적용 시 : W100+h100+padding-top20 = 100x100
+### width, height
+* 요소의 너비와 높이
+* 절대값 px, 상대값 %, 화면 상대값 vw /*뷰 포트의 넓이*/, vh /*뷰 포트의 높이*/
+* 상대값 처리는 0~100% 사이 값만 사용한다.
+
+## form 요소와 속성
+### `<form action="#" method=""> </form>`
+* action : 입력된 정보를 제출하는 최종 주소(URL)은 action 속성에 입력합니다.
+* method : 입력된 정보를 제출할 때 HTTP 정보를 method 속성에 입력합니다. 
+* fieldset, legend : 
+- 정보 컨트롤 요소 들을 용도에 맞게 그룹으로 묶을 경우 사용합니다.
+- form의 자식 요소로 배치합니다.
+- fieldset의 자식으로 배치합니다.
+
+### `<input type="" name="">`
+* type : checkbox, radio, option, select 등..
+* name : 2개이상의 데이터를 묶어주는 그룹명
+* readonly : 읽기전용 설정
+* autofocus, autocomplete : 페이지 로딩 시 해당 컨트롤 자동 포커스 설정 / 검색창 자동완성
+* value : 서버(action)전송 시 입력한 데이터 구분 명칭 / 미리 제시된 텍스트(활성화 시 제거안됨)
+* placeholer :미리 제시된 텍스트(활성화 시 제거됨)
+* value와 placeholder의 차이점 :
+* maxlength : 최대글자 수 지정
+
+### `<textarea></textarea>`
+* rows, cols : 텍스트 영역의 세로 폭 / 텍스트 영역의 가로 폭
+* 사용용도 및 주의사항 : 텍스트를 편집할 수 있는 컨트롤
+
+### input의 입력양식과 선택양식
+* text, url 등의 사용자가 직접입력가능한 입력양식
+* radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
+* `name` : 입력양식 (데이터구분용), 선택양식(데이터구분 개별데이터X , 그룹데이터구분용)
+* `value` : 입력양식(초기값), 선택양식(개별데이터구분용)
+
+## css Layout
+### float, flex
+* `float` : 형제 관계에 해당하는 block or inline tag 왼쪽, 오른쪽 정렬할 때 사용
+* 예 : ul-li *3개 정렬 `ul li {float:left;}`
+* `flex` : 정렬하고자 하는 아이템의 부모한테 flex를 먼저 설정한다.
+* 예 : ul-li *3개 정렬 `ul {display:flex;}`
+* flex 설정 시 **기본값** : 메인축(수평) 교차축(수직)
+* `display:flex` : 정렬대상의 부모 설정 속성값, 설정 시 해당 부모 기준 자식까지(자손X) flexible box layout 으로 처리하겠다.
+
+## flex-direction : (container에 적용)
+* container 안에 item의 메인축 방향을 설정할 때 사용
+* flex-direction : row 왼쪽->오른쪽 수평축 (기본값)
+* flex-direction : rpw-reverse 오른쪽 -> 왼쪽
+* flex-direction:column 위-> 아래 수직축 변경
+* flex-direction:column-reverse 아래->위
+
+## flex-wrap : (container에 적용)
+* flex-wrap:wrap 기본값(자동 줄바꿈)  ex) 1 2 3
+* flex-wrap-reverse 행 기준 역방향으로 자동 줄바꿈 처리
+* flex-wrap:nowrap 줄바꿈하지 않음(한 줄 처리) 가변너비에 따라 자동으로 % 크기 변경
+
+## flex-flow : (container에 적용)
+* flex-direction과 flex-wrap을 묶음으로 처리
+* flex-direction: column + flex-wrap:nowrap 일 경우(아래)
+* flex-flow:column nowrap 이라고 작성 가능.
+
+## justify-content (container에 적용)
+* container에 적용하는 속성
+* 메인축의 정렬방법
+
+## align-content (item 2줄 이상)
+* 교차축의 아이템이 2줄 이상일 경우
+* flex-wrap:wrap 적용한 상태로 확인하세요.
+* align-content:stretch / align-content:flex-start / align-content:flex-end /align-content:center / align-content:space-between	/ align-content:space-around
+
+## align-items (item 1줄)
+* 교차축의 아이템이 1줄 일 경우 정렬방법
+* align-items:stretch /align-items:flex-start /align-items:flex-end/ align-items:center /align-items:baseline
+
+##  align-self (item에 적용하는 속성)
+* item에 적용하는 속성.
+* flex box의 교차축을 정렬.
+* container에 적용하는 align-items보다 우선순위가 높습니다.
+* align-self:flex-start / align-self:flex-end / align-self:center / align-self:baseline
+
+## order (item에 적용하는 속성) (mobile 만들때 활용 많이 함.)
+* 아이템의 정렬 순서 설정
+* order:-1 /order:0 / order:1
+
+## flex-grow  (item에 적용하는 속성)
+* container 너비에서 각 아이템의 증가 비율
+
+## flex-shrink  (item에 적용하는 속성)
+* 각 아이템의 감소 비율
+
+## flex-basis  (item에 적용하는 속성)
+*  container 너비에서 각 아이템의 기본 크기
+
+## flex  (item에 적용하는 속성)
+* 증가/감소/기본의 묶음 속성
+* flex:1 0 auto / 너비 grow(1) shrink(0) basis(auto)
