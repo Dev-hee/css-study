@@ -1,0 +1,99 @@
+html {scrollbar-width: 10px;;scrollbar-color: #D9D9D9 #fff;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*�ㅽ겕濡ㅻ컮 �ш린*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*�ㅽ겕濡� �쒕옒洹몃컮*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+::-webkit-scrollbar {width: 10px;}/*�ㅽ겕濡ㅻ컮 �ш린*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px #fff;}/*�ㅽ겕濡ㅻ컮 諛곌꼍*/
+::-webkit-scrollbar-thumb {background-color: #D9D9D9;border-radius: 5px;}/*�ㅽ겕濡� �쒕옒洹몃컮*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+body, html {background-color: #F5F5F5;}
+main #join_frm{
+    font-family: "Noto Sans KR", sans-serif;
+    width: 360px;
+    margin: 20px auto 0;
+    background-color: antiquewhite;
+}
+main #join_frm .user_info h1{
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: aqua;
+    margin-bottom: 20px;
+    display:inline-block;
+    text-align: center;
+}
+main #join_frm .user_info p{
+    float: center;
+
+    text-align: center;
+}
+main #join_frm .user_info ul{
+    background-color: rgb(79, 178, 81);
+    margin-bottom:3px;
+    float:center;
+
+}
+
+main #join_frm .user_info ul li{
+    background-color: rgb(79, 178, 81);
+    margin-bottom:3px;
+    float: left;
+    text-align: center;
+    padding:10px;
+    margin: 20px auto 0;
+}
+
+main #join_frm .user_info ul li a{
+
+}
+main #join_frm .user_info dl{
+    float: left;
+    text-align: left;
+    padding: 20px 0;
+    }
+main #join_frm .user_info dl dt{
+    float: left;
+    background-color: rgb(207, 131, 172);
+    font-size:1.125rem;
+    margin-bottom:10px;
+    text-align: left;
+    padding: 10px 0;
+    width: 360px;
+    }
+main #join_frm .user_info dl dt dd{
+    background-color: rgb(255, 149, 0);
+    font-size: 0.875rem;
+    letter-spacing:-0.3px;
+    color:#828C94;
+    float: left;
+    margin-bottom:10px;
+    padding: 10px 0;
+}
+main #join_frm .user_info dl dd input[name^=user] {
+    border: 1px solid #DADCE0;
+    background-color: #FFFFFF;
+    font-size: 0.875rem;
+    width: 168px;
+    padding: 10px 0;
+    border-radius: 3px;
+    margin-bottom:10px;
+}
+main #join_frm .user_info dl dd select[name=email_select] {
+    border: 1px solid #DADCE0;
+    background-color: #FFFFFF;
+    width: 168px;
+    font-size: 0.875rem;
+    height: 38px;
+    border-radius: 3px;
+}
+main #join_frm .user_info dl dd .email_authentication{
+    background-color: #F7F8FA;
+    border: 1px solid #DADCE0;
+    width: 358px;
+    font-size: 1.125rem;
+    padding: 14px;
+    border-radius: 3px;
+    color: #828C94;
+    font-weight: 700;
+    margin-bottom:10px;
+}
