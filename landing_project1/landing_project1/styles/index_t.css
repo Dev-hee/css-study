@@ -1,0 +1,152 @@
+main {}
+/* 배경 공통&개별값 + 공통 제목 */
+main .bg {
+    background-position:center;
+    background-repeat:no-repeat;
+}
+main .bg > section {width:1250px; margin:0 auto; background-color:purple;}
+main .bg1 {background-image:url(../images/bg.jpg); height:1001px;}
+main .bg2 {background-image:url(../images/bg_2.jpg);}
+main .bg section .sub_title {
+    font-size:3.438rem; letter-spacing:-0.1px;
+    font-weight:600;  color:#fff;
+    line-height:1.2;
+}
+main .bg section .sponsor_link {
+    /* 0% #FE9300, 100% #FF7300 */
+    /* CSS 회전각도단위 deg */
+    background:linear-gradient(90deg, #FE9300, #FF7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    width:409px; height:71px; margin:0 auto;
+    /* text-align:center; line-height:71px; */
+    border-radius:50px; font-size:2.125rem;
+    font-weight:700; color:#fff;
+}
+/* ----------------------1. 표지 */
+main .bg1 section {}
+main .bg1 section h1 {}
+main .bg1 section h1 a {}
+main .bg1 section h1 a img {}
+main .bg1 section h2 {
+    text-align:center;
+    font-size:4.375rem; color:#fff;
+    letter-spacing: -0.2px; line-height:1.2;
+    margin:143px 0 42px;
+}
+main .bg1 section h2 em {font-weight:700;}
+main .bg1 section .sponsor_link::after {
+    content:'';
+    background-image:url(../images/btn_right_arrow.svg);
+    background-repeat: no-repeat;
+    width:32px; height:32px;
+    display:inline-block;
+}
+main .bg1 section .sponsor_question {
+    background-color:#050505; color:#fff;
+    float: right;
+    width: 439px; border-radius: 30px;
+    text-align: center; line-height: 51px;
+    font-size: 1.625rem;
+    /* margin-top: 189px; */ margin:189px 0 0;
+    display:flex; justify-content: center; align-items:center;
+}
+main .bg1 section .sponsor_question::before,
+main .bg1 section .sponsor_question::after {
+    content:'';
+    background-repeat:no-repeat;
+    background-size:24px;
+    display:inline-block;
+    width:24px; height:24px;
+}
+main .bg1 section .sponsor_question::before {
+    background-image:url(../images/icon_sms.svg);
+}
+main .bg1 section .sponsor_question::after {
+    background-image:url(../images/btn_right_arrow.svg)
+}
+/* ------------------------2-퀴즈 */
+/* ------------------------2-퀴즈---퀴즈 */
+main .bg2 section {display:flex; /*flex의 item기본 메인축 정렬은 수평*/}
+main .bg2 section > * {flex:1; /* width:50%; */ }
+main .bg2 section #quiz_frm {
+    padding:54px 0 55px;
+}
+main .bg2 section #quiz_frm .quiz_contents {}
+main .bg2 section #quiz_frm .quiz_contents h2 {
+    margin:0 0 38px; /*margin-top:5 4px; margin-bottom:38px;*/
+    width:450px; text-align:center;
+}
+main .bg2 section #quiz_frm .quiz_contents h2+p {
+    font-size:1.25rem; line-height:1.7; color:#fff;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list {margin:0 0 27px;}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li {margin:0 0 20px;}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li:last-child {margin:0;}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=quiz_q] {display:none;}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li label {
+    background-image:url(../images/quiz_unchecked.svg);
+    background-repeat:no-repeat;
+    padding-left:48px; line-height:28px;
+    display:inline-block; color:#fff;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list+p {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list+p #answer_btn {
+    background-color:#050505; color:#fff; border:0;
+    border-radius:50px; width:450px; line-height:39px;
+}
+/* ------------------------2-퀴즈---퀴즈(인풋 체크 시 활성화 label 디자인) */
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=quiz_q]:checked + label {
+    background-image:url(../images/quiz_checked.svg);
+}
+/* ------------------------2-퀴즈---참여현황 */
+main .bg2 section .quiz_participation {
+    padding:115px 0 0;
+    display:flex; flex-flow:column wrap;
+    align-items:flex-end;
+}
+main .bg2 section .quiz_participation .status {
+    width:500px;
+    border-radius:10px;
+    overflow:hidden;
+}
+main .bg2 section .quiz_participation .status h2 {
+    background-color:#FE9300;
+    font-size:1.625rem; color:#fff;
+    /* text-align:center; */ line-height:60px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main .bg2 section .quiz_participation .status h2::before {
+    background-image:url(../images/icon_person.svg);
+    content:''; display:inline-block;
+    width:42px; height:42px;
+}
+main .bg2 section .quiz_participation .status .contents {
+    background-color:#fff; text-align:center;
+    padding:40px 0;
+}
+main .bg2 section .quiz_participation .status .contents em {
+    font-size:4.375rem; font-weight:700; letter-spacing:-0.2px;
+    color:#FE9300;
+}
+main .bg2 section .quiz_participation .status .contents span {
+    color:#FE9300;
+}
+main .bg2 section .quiz_participation .status .contents strong {}
+main .bg2 section .quiz_participation .status .contents span,
+main .bg2 section .quiz_participation .status .contents strong {
+    font-size:2.125rem; font-weight:700;
+}
+main .bg2 section .quiz_participation p {
+    margin-top:20px; font-size:1.25rem; color:#fff;
+}
+/* ------------------------3-새끼 북극곰의 이야기 */
+main .bg3 {background-image:url(../images/bg_3.jpg);}
+main .bg3 section {padding:127px 0 204px; text-align:center;}
+main .bg3 section .sub_title {}
+main .bg3 section #video {width:900px; height:600px; margin:70px 0;}
+main .bg3 section .sponsor_link {}
