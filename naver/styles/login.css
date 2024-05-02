@@ -1,0 +1,98 @@
+#app {
+    width: 375px; height:812px;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding-top: 42px;
+}
+/* ====================top,logo*/
+#app .top {
+    padding: 16px;
+    border: 1px solid gray;
+}
+#app .top .prev{
+    display: inline-block;
+    overflow: hidden;
+    width: 24px; height: 24px; 
+    background-color: gray;
+}
+#app .top .prev img{ 
+}
+#app  h1 {
+    width:111px; height:38px; background-color: gray;
+    margin:37px auto 36px;
+}
+#app  h1 a{  
+}
+#app  h1 a img{    
+}
+#app .keyboard_g{   
+    border: 1px solid gray;
+    margin: 0 0 16px; padding: 0 16px;
+    /* text-align: right; */
+    display: flex;    /* div(container) a(item) */
+    justify-content: flex-end;
+}
+#app .keyboard_g a{ 
+    font-size: 0.75rem; /* a(container)글자,img (item) */
+    display: flex;
+    align-items: flex-start;}
+#app .keyboard_g a img{
+    width: 16px; height: 16px; 
+    background-color: gray; 
+    margin: left;} 
+
+/* ====================form*/
+#app #login_frm {
+    width: 375px;
+    padding:0 16px}
+#app #login_frm .login_g{}
+#app #login_frm .login_g ul{
+        border-radius: 5px; 
+        overflow:hidden;
+        margin : 0 16px 16px;
+        border: 1px solid black;
+    /* div(container) a(item) */}
+#app #login_frm .login_g ul li{}
+#app #login_frm .login_g ul li:first-child{
+    border-bottom:1px solid black;
+    border-radius: 5px;}   
+#app #login_frm .login_g ul li input[name^=user]{
+    border: 0; outline: none;
+    width: 100%; 
+    padding: 16px 16px 16px 56px;
+    /* input,button은 inline요소지만 css에서 크기를 인식한다.*/
+   /* div(container) a(item) */}
+#app #login_frm .login_g ul li input[name$=id]{}
+#app #login_frm .login_g ul li input[name$=pw]{}
+#app #login_frm .login_g .btn {
+    margin: 0 16px;
+}
+#app #login_frm .login_g .btn #login_btn{
+    padding: 16px 0;
+    width: 100%;}
+/* ====================로그인 오류시 출력 메세지(기본 숨김)*/
+#app #login_frm .login_g .error_message{
+    font-size: 0.75rem;
+    margin: 0 16px 16px;
+    display:none; /* 초기숨김*/
+    /* 버튼 안쪽 글자는 기본 정렬이 가운데이다*/
+}
+/* ====================찾기,가입*/
+#app .search_join{
+    margin-top: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;}
+#app .search_join a{font-size: 0.75rem;
+display: flex; }
+#app .search_join a::after{
+    content: ''; display:inline-block;
+    width: 1px; height:10px;
+    background-color: black;
+    margin: 0 8px; 
+}
+/*마지막 구분선 제거
+ #app .search_join a::after {display: none;} */
+#app .search_join a:last-child::after {
+    display: none;
+    margin: 0;}
