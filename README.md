@@ -164,3 +164,25 @@
 ## flex  (item에 적용하는 속성)
 * 증가/감소/기본의 묶음 속성
 * flex:1 0 auto / 너비 grow(1) shrink(0) basis(auto)
+
+## 1. position:relative(필수) / left , right , top , bottom(보조)**
+* 자기 자신의 현재 위치를 기준으로 움직임
+* relative 선택 속성 
+top / bottom / left / right
+
+## 2. position:absolute(필수) / left , right , top , bottom(보조)**
+* 부모 위치를 기준으로 상대적으로 위치를 움직입니다.
+* 부모 기준은 가장 가까운 부모 기준 position 값을 인식합니다.(모든 position 가능)
+
+## 3. position:fixed(필수) / left , right , top , bottom(보조)**
+* 페이지 스크롤길이와 관계없이 웹브라우저 위치에 고정됩니다.
+* 팝업 요소에 주로 사용합니다.
+* body를 기준으로 위치가 정해집니다.
+
+## css-font-awesome 
+* 1. font-awesome CDN link 태그로 준비한다.
+* 2. awesome 전용의 font-family와 weight를 설정한다.
+* 3. awesome 적용될 태그를 준비한다.
+* 4. 준비한 3번 태그에 가상선택자 (after 또는 before)를 작성한다.
+* 5. 가상선택자에 content속성을 입력해서 Unicode를 삽입한다.
+
