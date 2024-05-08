@@ -2,53 +2,143 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이다희 | 프로젝트 모음</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/reset.css">
-    <style>
-        .bg{
-            height: 400px; background-color: #FFEDE0;
-            padding-top:125px; text-align: center;}
-        .bg .lang {font-size: 1.875rem;}
-        .bg h1 {line-height:1.5; font-size: 3rem; font-weight: 700;}
-        .bg p{font-size: 1.375rem;}
-        .bg .date {}
-        .list{
-            padding: 10px;
-            width: 630px; margin: 20px auto 0;
-            display: flex; flex-flow:row wrap;
-        }
-        .list a{
-            width:calc((100% - 10px) / 2);
-            border-bottom: 1px solid #000;
-            text-align: center;
-            padding: 16px 12px;
-        }
-        .list a:nth-child(odd){
-            margin-right: 10px;
-            
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>당근 - 리뉴얼랜딩페이지</title>
 </head>
 <body>
-    <div class="bg">
-        <p class="lang">HTML,CSS</p>
-        <h1>DAHEE 프로젝트</h1>
-        <p class="date">24.03.19 ~ 24.08.02</p>
-    </div>
-    <div class="list">
-        <a href="./project_spc/index.html" target="_blank">SPC 삼립 24/04/17</a>
-        <a href="./landing_project1/index.html" target="_blank">북극곰-랜딩페이지 24/04/30 </a>
-        <a href="./naver/index.html" target="_blank">네이버 로그인 24/05/02</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">7</a>
-        <a href="#">8</a>
-        <a href="#">9</a>
-        <a href="#">10</a>
-    </div>
+    <main>
+        <div class="top">
+        <h1><a href="https://www.daangn.com/"><img src="./images/logo.svg"></a></h1>
+        </div>
+        <nav class="top_right">
+            <ul class="left">
+                <li>중고거래</li>
+                <li>동네업체</li>
+                <li>동네일자리</li>
+                <li>동네이야기</li>
+            </ul>
+            <ul class="right">
+                <li>이벤트</li>
+            </ul>
+            <form action="#" method="get" name="search" >
+                <input type="search" class="top" placeholder="물품이나 동네를 검색해보세요" value="">
+            </form>
+            <button type="button" class="top" value="">공유하기</button>
+        </nav>
+        <div class="main">
+            <h1>쉽고 안전한 당근.<br>당신 근처에서 시작하세요!</h1>
+            <p>필요한 물품을 동네에서 이웃과 함께해요.</p>
+            <div id="download_buttons">
+                <a target="_blank" class="download_button" id="header_button_android" href="https://play.google.com/store/apps/details?id=com.towneers.www">
+                    <img class="google-play" alt="Google Play" src="./images/google_logo.png">
+                    <div class="download-text">Google Play</div></a>
+                <a target="_blank" class="download_button" id="header_button_ios" href="https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995">
+                    <img class="apple_store" alt="App Store" src="images/apple_logo.png">
+                <div class="download-text">App Store</div></a>
+                <a target="_blank" class="distance" id="header_button_distance" href="#">
+                    <img class="distance" alt="distance" src="./images/distance.png">
+                <div class="download-text">나의 근처이웃 최대거리는?</div></a>
+            </div>
+        </div>
+        <div class="event">
+            <section>
+                Q. 나의 근처에 있는 이웃의 중고거래 범위는 최대 몇 km일까요?  
+                <form action="#" method="get" id="quiz_frm">
+                    <legend class="skip">퀴즈 이벤트</legend>
+                    <h2><span>가까운 곳</span>에서<br>쉽고 편한<br>안전한 중고거래</h2>
+                    <p>Q. 나의 근처에 있는 이웃의 중고거래 범위는 최대 몇 km일까요?</p>
+                    <ul class="quiz_list">
+                        <li>
+                            <input type="radio" name="quiz_q" value="2km" id="2km">
+                            <label for="2km">2km</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quiz_q" value="5km" id="5km">
+                            <label for="q40">5km</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quiz_q" value="4~5km" id="4~5km">
+                            <label for="4~5km">4~5km</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quiz_q" value="7~10km" id="7~10km">
+                            <label for="7~10km">7~10km</label>
+                        </li>
+                    </ul>
+
+                    <a target="_blank" class="distance" id="header_button_distance" href="#">
+                        <img class="distance" alt="distance" src="./images/distance.png">
+                    <div class="download-text">정답 맞추러 가기</div></a>
+                </form>
+            </section>
+        </div>
+        <div class="video">
+            <section>
+                <div class="price"><img src="./images/1위당근.png"></div>
+                <h2 class="sub_title">대한민국 <span>1위</span> 중고거래 앱<br><span>당근마켓</span></h2>
+                <iframe id="video" width="950" height="534" src="https://www.youtube.com/embed/hbx7-Fklbac?autoplay=1&mute=1&loop=1" title="동네는 나의 힘 - 당근마켓 동네생활" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </div>
+        <div class="why">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">1:1 중고 거래가<br> 두려워진 이유는?</h1>
+                <p class="service-desc">당근 채팅앱 을 통해 안전하게<br>상대방의 거래 위치 파악할 수 있어요.</p>
+            </section>
+            <div class="">
+                    <p><img class="right"" src="#" alt="말풍선">저 분이 아니면 어떡하지?</p>
+                    <p><img class="left"" src="#" alt="말풍선">서초역 1번출구 앞에 있어요.</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">이 시간에 동네약국이 <br> 열려있을까?</h1>
+                <p class="service-desc">동네주민과 앱 커뮤니티로 소통할 수 있어요.</p>
+            </section>
+            <div class="">
+                    <p><img class="right"" src="#" alt="말풍선">주말인데 열린 약국이 있을까요?</p>
+                    <p><img class="left"" src="#" alt="말풍선">뱅뱅사거리 쪽 약국 열려있네요.</p>
+            </div>
+        </div>
+        <div class="news_2">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">도보 10분<br> 일자리가 있다</h1>
+                <p class="service-desc">당근마켓 앱에서 여러분의 가까운 일자리를 찾아드려요</p>
+            </section>
+            <div class="">
+      버튼
+            </div>
+        </div>
+            
+        </div>
+        <div class="local job">
+            
+        </div>
+        <div class="how">
+            
+        </div>
+        <div class="now">
+            
+        </div>
+        <div class="now_2">
+            
+        </div>
+        <div class="footer">
+            
+        </div>
+    </main>
 </body>
+</html>
