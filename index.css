@@ -1,0 +1,22 @@
+main{
+    font-family:"Noto Sans KR", sans-serif;
+    text-align: center;
+    width:1920px;
+  } /* 배경 공통&개별값*/
+main .top {
+    height: 55px;
+    background-color:yellow;
+    margin:0 400px;
+
+}
+main .top h1{}
+main .top h1 a{}
+main .top .top_right{    
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-between;}
+main .top .top_right .left{}
+main .top .top_right .left li{}
+main .top .top_right .right{}
+main .top .top_right .right li{}
