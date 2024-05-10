@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        button {
+            padding:20px;
+            margin:20px;
+            background-color: #000;
+            color: #fff;
+        }
+        #btn1{transition: background-color 1s;}
+        #btn1:hover{
+            background-color: rgb(88, 88, 88);
+            /*hover 이용 css속성 값 변경 시 즉시변경 */
+            /*자연스러운 전환 애니메이션을 원한다면?? */
+            /*transition:애니메이션적용속성 지속시간 */
+            /*transition: background-color 1s; */
+            /*마우스를 올렸을 땐 (hover) 자연스럽게 변환 성공 */
+            /*마우스가 나가면 왜 다시 즉시변경될까 ? */
+            /*이유 => transition을 hober 선택자에 썼으니까! */
+        }
+        #btn2 {width:150px; transition:width 0.5s;}
+        #btn2:hover{width:200px;}
+        #btn3 {
+            position: relative; left: 0;
+            width: 150px; height:70px;
+            background-color:blue;
+            /* transition: 애니메이션 적용속성 지속시간 지연시간;*/
+            transition:
+            left 1s 2s,
+            width 0.5s,
+            height 2s, 
+            background-color 0.2s;
+        }
+        #btn3:hover {
+            left: 20px;
+            width: 200px; height: 100px;
+            background-color: pink;
+        }
+        #btn4{
+            position:absolute;
+            right:150px;
+            width: 150px; height:70px;
+            background-color: purple;
+            transition: 
+            width 0.5s,
+            background-color 0.3s;
+        }
+        #btn4:hover {
+            right:100px;
+            width: 100px; height: 65px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+    <body>
+        <h1>css animation</h1>
+        <button type="button" id="btn1">button1</button>
+        <hr>
+        <button type="button" id="btn2">button2</button>
+        <hr>
+        <button type="button" id="btn3">button3</button>
+        <hr>
+        <button type="button" id="btn4">button4</button>
+    </body>
+</html>
