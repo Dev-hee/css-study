@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./images/character_2.png">
+    <title>당근 - 리뉴얼랜딩페이지</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="#"><img src="./images/logo.svg" alt="zepeto"></a></h1>
+            <nav>
+                <a href="#">중고거래 </a>
+                <a href="#">동네업체</a>
+                <a href="#">동네일자리</a>
+                <a href="#">동네이야기</a>
+                <a href="#">이벤트</a>
+            </nav>
+            <div class="snb">
+                <a href="#">이벤트</a>
+                <input type="search" name="search" value="" placeholder="물품이나 동네를 검색해보세요">
+                <a href="#">공유하기</a>
+            </div>
+        </header>
+        <div class="top">
+            <section>
+            <h1>쉽고 안전한 당근.<br>당신 근처에서 시작하세요!</h1>
+            <p>필요한 물품을 동네에서 이웃과 함께해요.</p>
+            <div id="download_buttons">
+                <a target="_blank" class="download_button" id="header_button_android" href="https://play.google.com/store/apps/details?id=com.towneers.www">
+                    <img class="google-play" alt="Google Play" src="./images/google_logo.png">
+                    <div class="download-text">Google Play</div></a>
+                <a target="_blank" class="download_button" id="header_button_ios" href="https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995">
+                    <img class="apple_store" alt="App Store" src="images/apple_logo.png">
+                <div class="download-text">App Store</div></a>
+                <a target="_blank" class="distance" id="header_button_distance" href="#">
+                    <img class="distance" alt="distance" src="./images/distance.png">
+                <div class="download-text">나의 근처이웃 최대거리는?</div></a></div>
+            </section>
+        </div>
+        <div class="event"> <!-- 배경 이외영역에 1250px를 넣어줌 -->
+                <div class="left">
+                    <form action="#" method="post" id="quiz_frm">
+                        <fieldset class="quiz_list">
+                            <legend class="skip">이벤트 양식</legend>
+                            <dl>
+                                <dt>Q. 나의 근처에 있는 이웃의 중고거래 범위는 최대 몇 km일까요?</dt>
+                                <dd>
+                                    <input type="radio" id="question_1" name="question">
+                                    <label for="question_1">2 km</label>
+                                </dd>
+                                <dd>
+                                    <input type="radio" id="question_2" name="question">
+                                    <label for="question_2">5 km</label>
+                                </dd>
+                                <dd>
+                                    <input type="radio" id="question_3" name="question">
+                                    <label for="question_3">4~5 km</label>
+                                </dd>
+                                <dd>
+                                    <input type="radio" id="question_4" name="question">
+                                    <label for="question_4">7~10 km</label>
+                                </dd>
+                            </dl>
+                        </fieldset>
+                    </form>
+                    <div class="quiz_btn_area">
+                        <button type="button" id="quiz_btn">정답 맞추러가기</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="video">
+            <section>
+                <div class="price"><img src="./images/1위당근.png"></div>
+                <h2 class="sub_title">대한민국 <span>1위</span> 중고거래 앱<br><span>당근마켓</span></h2>
+                <iframe id="video" width="950" height="534" src="https://www.youtube.com/embed/hbx7-Fklbac?autoplay=1&mute=1&loop=1" title="동네는 나의 힘 - 당근마켓 동네생활" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </div>
+        <div class="why">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">1:1 중고 거래가<br> 두려워진 이유는?</h1>
+                <p class="service-desc">당근 채팅앱 을 통해 안전하게<br>상대방의 거래 위치 파악할 수 있어요.</p>
+            </section>
+            <div class="">
+                    <p><img class="right"" src="#" alt="말풍선">저 분이 아니면 어떡하지?</p>
+                    <p><img class="left"" src="#" alt="말풍선">서초역 1번출구 앞에 있어요.</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">이 시간에 동네약국이 <br> 열려있을까?</h1>
+                <p class="service-desc">동네주민과 앱 커뮤니티로 소통할 수 있어요.</p>
+            </section>
+            <div class="">
+                    <p><img class="right"" src="#" alt="말풍선">주말인데 열린 약국이 있을까요?</p>
+                    <p><img class="left"" src="#" alt="말풍선">뱅뱅사거리 쪽 약국 열려있네요.</p>
+            </div>
+        </div>
+        <div class="news_2">
+            <div class="home_main_1">
+                    <img srcset="#" class="home_main_1_img" alt="우리동네 중고 직거래 사진" src="">
+            </div>
+            <section>
+                <h1 class="home-main-title">도보 10분<br> 일자리가 있다</h1>
+                <p class="service-desc">당근마켓 앱에서 여러분의 가까운 일자리를 찾아드려요</p>
+            </section>
+            <div class=""> 버튼
+            </div>
+        </div>
+            
+        </div>
+        <div class="local job">
+            
+        </div>
+        <div class="how">
+            
+        </div>
+        <div class="now">
+            
+        </div>
+        <div class="now_2">
+            
+        </div>
+        <div class="footer">
+            
+        </div>
+    </main>
+</body>
+</html>
