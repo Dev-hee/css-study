@@ -1,0 +1,121 @@
+main{
+    font-family:"Noto Sans KR", sans-serif;
+    background-color:rgb(224, 224, 224);
+    width:1920px;
+
+} /* 배경 공통&개별값*/
+main header{
+    padding: 0 16px;
+    margin:0 400px;
+    /*교차축(수직) 정렬 */
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(55, 173, 173);
+    height:64px;
+}
+main header h1{width:70px;}
+main header h1 a{}
+main header h1 a img{width: 100%; }
+main header nav{
+    background-color: #fff;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-between;}
+main header nav a{   
+    color: #4D5159; font-size: 1.25rem;
+    margin-right:24px;
+}
+/* nav 상단 오른쪽 */
+main header .sub{ 
+    display: flex;
+    align-items: right;
+    background-color: rebeccapurple;}
+main header .sub a{border: 1px solid black;}
+main header .sub a input[name=search]{width:100%;}
+header .snb a:last-child
+    {background-color:#ffffff;
+    width: 122px;
+    border: 1px solid #4D5159;
+    padding:0px 10px;
+    line-height:39px; 
+    margin-right: 24px;
+    }
+/* 1. 메인 */
+main .top
+{   height: 794px;
+    background-color:#FFFAE0;
+    background-image: url(../images/left_img.png);
+    margin:0 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items:flex-end;
+    text-align: center;
+}
+
+/* 1. 메인 오른쪽 글자  */
+main .top section{
+    padding-top: 200px;}
+
+main .top section h1{
+    font-size: 3.125rem;
+    margin-bottom:150px;
+}
+main .top section p{font-size:1.125rem;}
+main .top section #download_buttons a{
+    margin: 212px;
+}
+/* 2. 이벤트 - 거리km  */
+main .event {
+    background-color: #F9F9F9;
+    background-image: url(../images/bg3.png);
+    height:529px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: raw nowrap;
+    justify-content: space-between;
+}
+main .event .left #quiz_frm {
+    margin-top:77px;
+    margin:77px 400px 0 400px;}
+main .event .left #quiz_frm .quiz_list {}
+main .event .left #quiz_frm .quiz_list dl {}
+main .event .left #quiz_frm .quiz_list dl dt {
+    font-size: 1.25rem;
+    margin-bottom: 10px; line-height: 1.7;
+}
+main .event .left #quiz_frm .quiz_list dl dd {
+    font-size: 1.25rem; line-height: 1.7;
+    margin-bottom: 16px;
+}
+main .event .left #quiz_frm .quiz_list dl dd input{
+    display: none;
+}
+main .event .left #quiz_frm .quiz_list dl dd label[for*=ques] {
+    background-image: url(../images/unchecked.png);
+    background-repeat: no-repeat;
+    background-size:30px;
+    padding-left: 49px;
+}
+main .event .left #quiz_frm .quiz_list dl dd input[name*=ques]:checked + label {
+    background-image: url(../images/checked.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 49px;
+}
+main .event .left .quiz_btn_area {}
+main .event .left .quiz_btn_area #quiz_btn {
+    background-color:#10955D; color: #fff;
+    width:408px; height: 39px;
+    font-size: 1.2rem;
+    margin:0 400px;
+    display: flex;
+    flex-flow: raw nowrap;
+    justify-content: space-between;
+    display:inline-block;
+    text-align: left;
+}
