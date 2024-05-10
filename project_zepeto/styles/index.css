@@ -53,7 +53,6 @@ main {}
 main .visual{
     height: 720px; overflow: hidden;
     position: relative;
-    border: 3px solid red;
     /* 겹치는 형제요소 디자인작업을 위한 absolute */
     /* 1. 겹치는 대상에 absolute 설정 후 부모확인을
     위해 left:0; top:0; 초기값 설정(부모의 왼쪽위로 배치)
@@ -82,7 +81,6 @@ main .visual .visual_title .start_link:hover{
 }
 /* 2. 크리에이터 */
 main .creater{
-    background-color: aqua;
     width:1300px; margin: 150px auto 0;
     text-align: center; /*자식,자손 글자 공통정렬*/
 }
@@ -96,18 +94,15 @@ main .creater h2 + p{
     margin:55px 0;
 }
 main .creater .img{
-    border:3px solid rgb(64, 6, 199);
     width: 697px;
     margin: 0 auto 55px;
 }
 main .creater .img img{width: 100%;}
 main .creater .studio{
-    border:3px solid red;
     display: flex;
     flex-flow: row nowrap;
 }
 main .creater .studio dl{
-    background-color: yellow;
     width:calc(100% / 3);
 }
 main .creater .studio dl:nth-child(2) {
@@ -188,6 +183,44 @@ main .million .contents{
     padding:0 16px;
     display: flex;
     flex-flow:nowrap;
+    
     justify-content: space-between;
 }
 main .million .contents img{width: 240px;}
+
+.f_gb {
+    background-color:#F5F5F5 ;
+    padding: 80px 0;}
+.f_gb footer{ 
+    max-width: 1300px;
+    margin: 0 auto; 
+}
+.f_gb footer .f_top{ 
+    margin-bottom: 24px;
+    display: flex;
+    flex-flow:nowrap;
+    justify-content:space-between;
+    }
+.f_gb footer .f_top .f_menu{}
+.f_gb footer .f_top .f_menu a{margin-right: 24px;}
+.f_gb footer .f_top .f_menu a:last-child{margin: 0;}
+.f_gb footer .lang_sns{
+    display: flex;
+    flex-flow:nowrap;
+}
+.f_gb footer .lang_sns #lang_select{
+    appearance: none;
+    outline: none;
+    padding: 0 10px;
+    height: 25px;
+    border-radius: 5px;
+    background-image:url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size:14px;
+    background-position-y:5px;
+    background-position-x:60px;
+}
+.f_gb footer .lang_sns #lang_select option{}
+.f_gb footer .lang_sns .sns{margin-left: 12px;}
+.f_gb footer .lang_sns a{}
+.f_gb footer .copy{}
