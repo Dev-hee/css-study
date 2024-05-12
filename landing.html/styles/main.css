@@ -1,0 +1,354 @@
+main{
+    width:1920px; 
+    font-family:'Noto Sans KR',sans-serif;
+}
+main header{ 
+    margin: 0 400px;
+    height: 64px;
+    padding: 0 16px;
+    background-color:#fff;
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-around;
+}   
+main header h1{width:55px;}
+main header h1 a{text-align: center;
+}
+main header h1 a img{width: 100%;}
+main header nav{}
+main header nav a{
+    font-size: 1.25rem;
+    color: #4D5159;
+    margin-right:20px;
+    }
+main header .snb{text-align: center;}
+main header .snb a{
+    font-size: 1.25rem;
+    color: #4D5159;}
+main header .snb input[name=search] {
+    width: 294px;
+    padding: 12px 33px;
+    border: 0;
+    text-align: center;
+}
+main header .snb a:last-child{
+    width: 500px;
+    border: 1px solid #4D5159;
+    padding: 12px 33px;
+    text-align: center;
+}
+
+/* ====================당근 첫번째 메인 */
+main .top_2{
+    background-color: #FFFAE0;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items:center; /*교차축(수직) 정렬 */
+    justify-items: flex-end;
+}
+main .top_2 img{
+    padding-left: 400px;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items:center; /*교차축(수직) 정렬 */
+    justify-content: space-between;
+}
+main .top_2 section{
+
+    display: flex;
+    flex-flow:column;
+    align-content: center; 
+    width: 533px;
+}   
+main .top_2 section h1{
+
+    font-size: 3.125rem;
+    margin: 20px 0;
+    text-align: center;
+    justify-content: space-between;
+} 
+main .top_2 section p{
+
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-align: center;
+}
+main .top_2 section #download_buttons{
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow:row nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; 
+
+}  /*버튼 3개*/
+main .top_2 section #download_buttons a{
+    background-color: #fff;
+    width: 190px;
+    display: flex;
+    flex-flow:column nowrap; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */}
+main .top_2 section #download_buttons a:nth-child(1)
+,main .top_2 section #download_buttons a:nth-child(2){
+    margin: 0 20px;
+    color: #fff;
+    background-color: #FF6F0F;
+
+}
+main .top_2 section #download_buttons a:last-child{
+    margin: 0 20px;
+    color: #fff;}
+
+/* 거리 */
+main .top_2 section #download_buttons .google-play{
+}
+main .top_2 section #download_buttons .gapple_store{}  
+main .top_2 section #download_buttons .google-play .download-text{}
+main .top_2 section #download_buttons .google-play .download-text:last-child{
+    padding: 10px;
+}/* 거리 */
+
+/*====================이벤트*/
+main .event_3{
+    width:1250px;
+    height: 529px;
+    background-color: #fff;
+    flex-wrap:wrap;
+    background-image:url(../images/bg3.png);
+    background-repeat: no-repeat;
+}
+
+main .event_3 section{
+    margin: 0 400px;
+}
+
+main .event_3 #quiz_frm{
+    margin: 70px;
+}
+
+main .event_3 #quiz_frm .quiz_contents h2{
+    margin-top: 50px 0;
+    font-size:3.438rem;
+    margin-bottom:60px;
+    text-align: left;
+}
+
+main .event_3 #quiz_frm #answer_btn{
+    background-color:rgb(42, 124, 31);
+    color: #fff;
+    width: 408px;
+    padding: 16px;
+    text-align: left;
+
+}
+main .event_3 #quiz_frm p{
+    width:450px;
+    font-size:1.2rem;
+    padding: 20px;
+}
+
+main .event_3 #quiz_frm p:last-child{
+    width:450px;
+    font-size:1.2rem;
+    text-align: right;
+
+}
+main .event_3 #quiz_frm input[name^=quiz_q]
+{
+    width:100%; line-height:20px;
+    margin-bottom:6px;
+}
+
+main .event_3 .quiz_participation{
+    margin: 0;
+    background-color:rgb(124, 46, 83);
+    font-size:1.625rem;
+}
+main .event_3 .quiz_participation .status h2{
+    background-color:rgba(196, 134, 2, 0.884);
+    font-size:3.125rem;
+
+}
+/* ====================당근 유튜브 */
+main .video_4{background-color: #FFFAE0;}
+main .video_4 section{margin:0 400px;
+    padding: 20px;
+    display: flex;
+    flex-flow:column; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-around;
+}
+main .video_4 section .price{
+    margin:20px auto;
+}
+main .video_4 section .price img{width: 100px;}
+main .video_4 section .sub_title{font-size: 3.125rem;
+text-align: center;}
+main .video_4 section .sub_title span{
+    color:#FF6F0F;}
+main .video_4 section #video {margin:20px ;}
+
+/* ==================== 1:1 중고거래 */
+main .why_5{
+    height:529px;
+    background-color: #fff;
+    background-image:url(../images/bg3.png);
+}
+main .why_5 .home_main_1
+{ margin:0 450px;}
+main .why_5 .home_main_1 img{}
+main .why_5 .home_main_1 .bubble{}
+main .why_5 .home_main_1 .bubble p{}
+main .why_5 .home_main_1 .bubble p:last-child{}
+/* h1 ~ p*/
+main .why_5 section{}
+main .why_5 section h1{font-size:3.125rem;
+}
+main .why_5 section p{}
+
+/* ==================== 동네약국 */
+main .community_6
+{
+    height:529px;
+    background-color:#FFFAE0;
+}
+main .community_6 .home_main_1 { margin:0 400px;}
+main .community_6 .home_main_1 img{ }
+main .community_6 .home_main_1 .bubble{}
+main .community_6 .home_main_1 .bubble p{}
+main .community_6 .home_main_1 .bubble p:last-child{}
+/* h1 ~ p*/
+main .community_6 section{}
+main .community_6 section h1{font-size:3.125rem;}
+main .community_6 section p{font-size:1.125rem}
+
+/* ==================== 도보 10분알바 */
+main .alba_7{
+    background-color: #fff;
+    background-image: url(../images/bg5.png);
+    background-repeat:no-repeat;}
+main .alba_7 img{
+    margin:0 400px;}
+main .alba_7 section{}
+main .alba_7 section h1{font-size:3.125rem;}
+main .alba_7 section p{font-size:1.125rem}
+main .alba_7 section p span{color:#FF6F0F;}
+/* ==================== 당근이의 성장기록 */
+main .develop{
+    margin: 0 400px;
+
+}
+main .develop section h2{
+    text-align: center;
+    font-size:3.125rem;
+    margin: 84px 0 54px;
+}
+main .develop section .square{
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 40px;
+    width: 480px;
+    border: 1px solid #1C1B1F;
+
+} /* 네모 하나 */
+main .develop section .square h3{
+    font-size: 1.25rem;
+}
+main .develop section .square img{
+    width:100px;}
+/* ==================== 많은기능 */
+main .features{background-color: aqua;
+    padding: 80px 0;}
+main .features section{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+
+}
+main .features section h2{font-size:3.125rem;}
+main .features section p{ }
+/* 5개 아이콘 배치 */
+main .features section .many_features{}
+main .features section .many_features a img{}
+/* ==================== 많은기능 */
+main .try{
+    background-image:url(../images/bg6.png);
+    padding: 80px 0;
+    flex-flow: column; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-between;
+
+}
+main .try section{
+    margin: 0 400px;
+    display: flex;
+    flex-flow: column; /*아이템(자식)의 정렬 방향 , row */
+    align-items: center; /*교차축(수직) 정렬 */
+    justify-content: space-between;}
+main .try section h1{
+    font-size:3.125rem;}
+main .try section p{
+    margin: 20px;
+}
+main .try section #download_buttons{  
+    display: flex;
+    flex-flow:row nowrap;
+    color: #fff;
+    background-color: #FF6F0F;
+}
+main .try section #download_buttons a{
+    padding:0 20px;
+}
+main .try section #download_buttons a:last-child{   
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}/* 거리 */
+main .try section #download_buttons .google-play{   }
+main .try section #download_buttons .apple_store{  }  
+main .try section #download_buttons .google-play .download-text{}
+main .try section #download_buttons a .download-text{}
+
+/* ==================== 많은기능 */
+main .f_bg{ 
+
+}
+main .f_bg footer{
+    background-color:#F5F5F5 ;
+    padding: 80px;
+    margin: 0 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main .f_b footer .f_left h1{} /* logo */
+
+main .f_b footer .f_left .bottom_1{} 두번째
+main .f_b footer .f_left .bottom_1 .ft_s{}
+main .f_b footer .f_left .bottom_1 .ft_s span{}
+main .f_b footer .f_left .bottom_1 .ft_s span b{}
+
+main .f_b footer .f_left .bottom_2{} 세번째
+main .f_b footer .f_left .bottom_2 .f_menu_1{} /* 상단 */
+main .f_b footer .f_left .bottom_2 .f_menu_1 a{}
+
+main .f_b footer .f_left .bottom_2 .f_menu_2{}  /* 하단 */
+main .f_b footer .f_left .bottom_2 .f_menu_2 a{}
+/* ==================== 아이콘 4개 + 언어 */
+main .f_b footer .f_right {}
+main .f_b footer .f_right .sns_lang{
+    display: flex;
+    flex-flow:nowrap;
+    }
+main .f_b footer .f_right .sns_lang a{
+    margin-left: 12px;}
+/* 언어 */
+main .f_b footer .f_right .sns_lang #lang_select{}
+main .f_b footer .f_right .sns_lang #lang_select option{}
