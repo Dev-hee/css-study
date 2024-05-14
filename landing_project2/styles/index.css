@@ -1,158 +1,165 @@
 main{
     width:1920px; 
     font-family:'Noto Sans KR',sans-serif;
+    margin: 0 auto;
 }
 main header{ 
-    margin: 0 400px;
-    height: 64px;
+    margin: 15px 400px;
     padding: 0 16px;
     background-color:#fff;
-    display: flex;
-    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
-    align-items: center; /*교차축(수직) 정렬 */
-    justify-content: space-around;
+    display:flex; 
+    flex-wrap: row nowrap;
+    justify-content:space-between;
+    align-items: center;
 }   
-main header h1{width:62px;}
-main header h1 a{text-align: center;
+main header h1{width:55px;}
+main header h1 a{
+
 }
 main header h1 a img{width: 100%;}
-main header nav{}
+main header nav{
+    display:flex; 
+    flex-wrap: row nowrap;
+    justify-content: cneter;
+}
 main header nav a{
     font-size: 1.25rem;
     color: #4D5159;
-    margin-right:20px;
+    margin:0 20px;
     }
-main header .snb{text-align: center;}
-main header .snb a{
+main header .snb{    
     font-size: 1.25rem;
-    color: #4D5159;}
+
+}
+main header .snb a{
+    margin: 0 20px;
+    align-items: center;
+    color: #4D5159;
+}
 main header .snb input[name=search] {
-    width: 294px;
-    padding: 12px 33px;
     border: 0;
-    text-align: center;
+    background-color: #4D5159;
+    width:294px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 11px 5px;
+
 }
 main header .snb a:last-child{
-    width: 500px;
     border: 1px solid #4D5159;
-    padding: 12px 33px;
     text-align: center;
+    padding: 11px 5px;
 }
 
 /* ====================당근 첫번째 메인 */
 main .top_2{
     background-color: #FFFAE0;
-    background-repeat:no-repeat;
-    display: flex;
-    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
-    align-items:center; /*교차축(수직) 정렬 */
-    justify-items: flex-end;
-}
-main .top_2 img{
-    padding-left: 400px;
-    background-repeat:no-repeat;
-    display: flex;
-    flex-flow: row nowrap; /*아이템(자식)의 정렬 방향 , row */
-    align-items:center; /*교차축(수직) 정렬 */
-    justify-content: space-between;
+    background-image: url(../images/left_img.png);
+    background-repeat: no-repeat;
+    background-position: 400px 0;
 }
 main .top_2 section{
-
-    display: flex;
-    flex-flow:column;
-    align-content: center; 
-    width: 533px;
+    margin:0  400px;
+    padding: 0 16px;
+    display:flex; 
+    flex-direction: column;
+    align-items: end;
+    justify-content:end;
 }   
 main .top_2 section h1{
-
+    margin-top: 220px auto;
     font-size: 3.125rem;
-    margin: 20px 0;
+    margin:100px 0;
+    line-height: 1.2;
     text-align: center;
     justify-content: space-between;
 } 
 main .top_2 section p{
-
     font-size: 1.125rem;
     line-height: 30px;
     text-align: center;
 }
 main .top_2 section #download_buttons{
     font-size: 1.5rem;
-    display: flex;
-    flex-flow:row nowrap; /*아이템(자식)의 정렬 방향 , row */
-    align-items: center; 
+    margin: 20px 0;
+}  
 
-}  /*버튼 3개*/
+/*버튼 3개*/
 main .top_2 section #download_buttons a{
-    background-color: #fff;
-    width: 190px;
-    display: flex;
-    flex-flow:column nowrap; /*아이템(자식)의 정렬 방향 , row */
-    align-items: center; /*교차축(수직) 정렬 */}
+    background-color:red;
+
+}
 main .top_2 section #download_buttons a:nth-child(1)
 ,main .top_2 section #download_buttons a:nth-child(2){
-    margin: 0 20px;
+    width: 190px;
     color: #fff;
     background-color: #FF6F0F;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items: center;
+    margin:0 20px;
+    padding: 20px;
 
 }
-main .top_2 section #download_buttons a:last-child{
+
+main .top_2 section #download_buttons a:nth-child(1) +
+,main .top_2 section #download_buttons a:nth-child(2)
+{margin: 20px}
+
+main .top_2 section #download_buttons a:last-child{}
+
+main .top_2 section #download_buttons a:nth-child(3){
     margin: 0 20px;
-    color: #fff;}
 
-/* 거리 */
-main .top_2 section #download_buttons .google-play{
-}
-main .top_2 section #download_buttons .gapple_store{}  
-main .top_2 section #download_buttons .google-play .download-text{}
-main .top_2 section #download_buttons .google-play .download-text:last-child{
-    padding: 10px;
-}/* 거리 */
+    color: #fff;
+    background-color:#10955D;
+    display:grid;
+    grid-template-columns: 408px;
+    justify-content:space-between;}
 
 /*====================이벤트*/
 main .event_3{
-    width:1250px;
-    height: 529px;
     background-color: #fff;
-    flex-wrap:wrap;
     background-image:url(../images/bg3.png);
     background-repeat: no-repeat;
+
 }
 
 main .event_3 section{
+    padding: 20px auto;
     margin: 0 400px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
 }
 
 main .event_3 #quiz_frm{
-    margin: 70px;
+
 }
 
 main .event_3 #quiz_frm .quiz_contents h2{
     margin-top: 50px 0;
     font-size:3.438rem;
-    margin-bottom:60px;
-    text-align: left;
 }
 
 main .event_3 #quiz_frm #answer_btn{
     background-color:rgb(42, 124, 31);
     color: #fff;
-    width: 408px;
-    padding: 16px;
-    text-align: left;
+    padding: 16px 202px 16px 16px;
 
 }
 main .event_3 #quiz_frm p{
-    width:450px;
     font-size:1.2rem;
     padding: 20px;
+    display: flex;
+    align-content:center
 }
 
 main .event_3 #quiz_frm p:last-child{
     width:450px;
     font-size:1.2rem;
     text-align: right;
-
 }
 main .event_3 #quiz_frm input[name^=quiz_q]
 {
@@ -160,15 +167,13 @@ main .event_3 #quiz_frm input[name^=quiz_q]
     margin-bottom:6px;
 }
 
-main .event_3 .quiz_participation{
-    margin: 0;
-    background-color:rgb(124, 46, 83);
-    font-size:1.625rem;
-}
-main .event_3 .quiz_participation .status h2{
-    background-color:rgba(196, 134, 2, 0.884);
+main .event_3 .status h2{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 200px 0;
+    padding: 0 auto;
     font-size:3.125rem;
-
+    text-align: center;
 }
 /* ====================당근 유튜브 */
 main .video_4{background-color: #FFFAE0;}
