@@ -4,8 +4,10 @@ main{
     margin: 0 auto;
 }
 main header{ 
-    margin: 15px 400px;
-    padding: 0 16px;
+    width:1250px;
+    height: 64px;
+    margin: 0 auto;    
+    padding:11px 0;
     background-color:#fff;
     display:flex; 
     flex-wrap: row nowrap;
@@ -37,18 +39,19 @@ main header .snb a{
     color: #4D5159;
 }
 main header .snb input[name=search] {
+    font-size:1rem;
     border: 0;
     background-color: #4D5159;
-    width:294px;
     background-color: #F5F5F5;
     border-radius: 20px;
-    padding: 11px 5px;
+    padding: 12px 89px 11px 9px;
 
 }
 main header .snb a:last-child{
     border: 1px solid #4D5159;
     text-align: center;
-    padding: 11px 5px;
+    padding: 12px 31px;
+
 }
 
 /* ====================당근 첫번째 메인 */
