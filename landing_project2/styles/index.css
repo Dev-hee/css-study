@@ -78,49 +78,41 @@ main .top_2 section h1{
     justify-content: space-between;
 } 
 main .top_2 section p{
+
     font-size: 1.125rem;
     line-height: 30px;
     text-align: center;
 }
-main .top_2 section #download_buttons{
+main .top_2 section #buttons{
     font-size: 1.5rem;
     margin: 20px 0;
+    width: 408px;
 }  
 
 /*버튼 3개*/
-main .top_2 section #download_buttons a{
-    background-color:red;
-
-}
-main .top_2 section #download_buttons a:nth-child(1)
-,main .top_2 section #download_buttons a:nth-child(2){
-    width: 190px;
+main .top_2 section #buttons .download_button {
+    background-color:#FF6F0F;
+    padding: 19px 25px;
     color: #fff;
-    background-color: #FF6F0F;
-    display: flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-    align-items: center;
-    margin:0 20px;
-    padding: 20px;
+}
+main .top_2 section #buttons .download_button a{
+    color: #fff;
 
 }
-
-main .top_2 section #download_buttons a:nth-child(1) +
-,main .top_2 section #download_buttons a:nth-child(2)
-{margin: 20px}
-
-main .top_2 section #download_buttons a:last-child{}
-
-main .top_2 section #download_buttons a:nth-child(3){
+main .top_2 section #buttons .download_button a:nth-child(1)
+main .top_2 section #buttons .download_button a:nth-child(2){
+}
+main .top_2 section #buttons .distance_button {
     margin: 0 20px;
-
+    width: 408px;
     color: #fff;
     background-color:#10955D;
-    display:grid;
-    grid-template-columns: 408px;
+    margin:30px 0px;
+    padding: 20px;
     justify-content:space-between;}
 
+main .top_2 section #buttons .distance_button a{
+        color: #fff;}
 /*====================이벤트*/
 main .event_3{
     background-color: #fff;
@@ -210,11 +202,22 @@ main .why_5 .home_main_1 .bubble{}
 main .why_5 .home_main_1 .bubble p{}
 main .why_5 .home_main_1 .bubble p:last-child{}
 /* h1 ~ p*/
-main .why_5 section{}
-main .why_5 section h1{font-size:3.125rem;
+main .why_5 section{
+    padding: 174px auto 211px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    background-color: royalblue;
 }
-main .why_5 section p{}
-
+main .why_5 section h1{
+    font-size:3.125rem;
+}
+main .why_5 section p{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 /* ==================== 동네약국 */
 main .community_6
 {
