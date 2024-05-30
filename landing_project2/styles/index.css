@@ -247,15 +247,25 @@ main .alba_7 section p{font-size:1.125rem}
 main .alba_7 section p span{color:#FF6F0F;}
 /* ==================== 당근이의 성장기록 */
 main .develop{
-    margin: 0 400px;
+    display: flex;
+    flex-wrap:wrap;
 
 }
+main .develop section{
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(200px- 50%);
+    padding:20px 50px;
+}
 main .develop section h2{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size:3.125rem;
     margin: 84px 0 54px;
 }
 main .develop section .square{
+    width: calc(200px- 50%);
     text-align: center;
     border: 1px solid black;
     display: flex;
@@ -265,8 +275,17 @@ main .develop section .square{
     padding: 40px;
     width: 480px;
     border: 1px solid #1C1B1F;
+border-radius: 10px;}
+main .develop section .square:nth-child(2),
+main .develop section .square:nth-child(3){
+    background-color: #10955D;
+    margin: 10px;}
 
-} /* 네모 하나 */
+main .develop section .square:nth-child(4),
+main .develop section .square:nth-child(5){
+    background-color: #6cca64;
+    margin: 10px;}
+ /* 네모 하나 */
 main .develop section .square h3{
     font-size: 1.25rem;
 }
